@@ -1,131 +1,131 @@
 (function($) {
-	"use strict";
+  "use strict";
 
-	$(document).ready(function() {
-		
-		// ====================================================================
+  $(document).ready(function() {
 
-		// Navbar position
+    // ====================================================================
 
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > $(window).height()) {
-				$('.navbar').addClass('fixed');
-				$('body').css('padding-top', '97px');
-			} else {
-				$('.navbar').removeClass('fixed');
-				$('body').css('padding-top', '0');
-			}
-		});
-		
-		// ====================================================================
+    // Navbar position
 
-		// Smooth Scroll on Menu Click
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > $(window).height()) {
+        $('.navbar').addClass('fixed');
+        $('body').css('padding-top', '97px');
+      } else {
+        $('.navbar').removeClass('fixed');
+        $('body').css('padding-top', '0');
+      }
+    });
 
-		$('.navbar a[href^=#]').on("click",function(){
-			var t= $(this.hash);
-			var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
-			if(t.length){
-				var tOffset=(t.offset().top - 90);
-				$('html,body').animate({scrollTop:tOffset},'slow');
-				return false;
-			}
-		});
+    // ====================================================================
 
-		// ====================================================================
+    // Smooth Scroll on Menu Click
 
-		// Superslides
+    $('.navbar a[href^=#]').on("click",function(){
+      var t= $(this.hash);
+      var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+      if(t.length){
+        var tOffset=(t.offset().top - 90);
+        $('html,body').animate({scrollTop:tOffset},'slow');
+        return false;
+      }
+    });
 
-		$('#slides').superslides({
-			play: 5000,
-			animation_speed: 2000,
-			animation: 'fade',
-			pagination: false
-		});
+    // ====================================================================
 
-		// ====================================================================
+    // Superslides
 
-		// Countdown
-		
-		//var weddingDate = new Date();
-		//var weddingDate = new Date(weddingDate.getFullYear() + 1, 1 - 1, 1);
-		var weddingDate = new Date("June 7, 2014 11:00:00")
-		$(".countdown").countdown({
-			until: weddingDate,
-			format: 'ODHMS'
-		});
+    $('#slides').superslides({
+      play: 5000,
+      animation_speed: 2000,
+      animation: 'fade',
+      pagination: false
+    });
 
-		// ====================================================================
+    // ====================================================================
 
-		// Owl Carousel
+    // Countdown
 
-		$("#registry .owl-carousel").owlCarousel({
-			items: 6,
-			itemsDesktop: [1199,5],
-			itemsDesktopSmall: [991,4],
-			itemsTablet: [767,3],
-			slideSpeed: 800
-		});
+    //var weddingDate = new Date();
+    //var weddingDate = new Date(weddingDate.getFullYear() + 1, 1 - 1, 1);
+    var weddingDate = new Date("June 7, 2014 11:00:00")
+    $(".countdown").countdown({
+      until: weddingDate,
+      format: 'ODHMS'
+    });
 
-		// ====================================================================
+    // ====================================================================
 
-		// Parallax
+    // Owl Carousel
 
-		$('.parallax').scrolly({bgParallax: true});
+    $("#registry .owl-carousel").owlCarousel({
+      items: 6,
+      itemsDesktop: [1199,5],
+      itemsDesktopSmall: [991,4],
+      itemsTablet: [767,3],
+      slideSpeed: 800
+    });
 
-		// ====================================================================
+    // ====================================================================
 
-		// Fun Facts Counter
+    // Parallax
 
-		var flag = 0;
+    $('.parallax').scrolly({bgParallax: true});
 
-	    $(window).scroll(function() {
-	        if (flag == 1){
-	           return false;
-	        }
-	        else{
-	           var bh = $(window).height();
-	           var st = $(window).scrollTop();
-	           var el = $('.timer');
-	           var eh = el.height();
-	           if ( st >= (100 + eh) - bh ) {
-	               el.countTo({
-	                   speed: 2000,
-	                   refreshInterval: 20
-	               });
-	           }
-	           flag = 1;
-	        }
-	    });
+    // ====================================================================
 
-		// ====================================================================
+    // Fun Facts Counter
 
-		// Fancybox
+    var flag = 0;
 
-		$('.fancybox').fancybox({
-			openEffect: 'none'
-		});
+      $(window).scroll(function() {
+          if (flag == 1){
+             return false;
+          }
+          else{
+             var bh = $(window).height();
+             var st = $(window).scrollTop();
+             var el = $('.timer');
+             var eh = el.height();
+             if ( st >= (100 + eh) - bh ) {
+                 el.countTo({
+                     speed: 2000,
+                     refreshInterval: 20
+                 });
+             }
+             flag = 1;
+          }
+      });
 
-		// ====================================================================
+    // ====================================================================
 
-		// Scroll Reveal
+    // Fancybox
 
-		if ($(window).width() > 767) {
+    $('.fancybox').fancybox({
+      openEffect: 'none'
+    });
 
-			// The starting defaults.
-			var config = {
-				after: '0s',
-				enter: 'top',
-				move: '50px',
-				over: '0.66s',
-				easing: 'ease-in-out',
-				viewportFactor: 0.33,
-				reset: false,
-				init: true
-			};
+    // ====================================================================
 
-			window.scrollReveal = new scrollReveal({reset: true});
-		}
+    // Scroll Reveal
 
-	})
+    if ($(window).width() > 767) {
+
+      // The starting defaults.
+      var config = {
+        after: '0s',
+        enter: 'top',
+        move: '50px',
+        over: '0.66s',
+        easing: 'ease-in-out',
+        viewportFactor: 0.33,
+        reset: false,
+        init: true
+      };
+
+      window.scrollReveal = new scrollReveal({reset: true});
+    }
+
+  })
 
 })(jQuery);

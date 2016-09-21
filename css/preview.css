@@ -1,6 +1,13 @@
-.welcome {
-  color: red;
+.welcome, h1 {
+  color: #cf4b54;
+
 }
-#bg {
-  overflow: none;
+
+h1 {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Josefin Slab', cursive;
 }

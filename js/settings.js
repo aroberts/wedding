@@ -8,6 +8,7 @@
     // Navbar position
 
     $(window).scroll(function(){
+      // if ($(this).scrollTop() > $('#slides').height()) {
       if ($(this).scrollTop() > $(window).height()) {
         $('.navbar').addClass('fixed');
         $('body').css('padding-top', '97px');
@@ -48,7 +49,8 @@
 
     //var weddingDate = new Date();
     //var weddingDate = new Date(weddingDate.getFullYear() + 1, 1 - 1, 1);
-    var weddingDate = new Date("June 7, 2014 11:00:00")
+    var weddingDate = new Date("June 17, 2017 16:00:00")
+    console.log(weddingDate);
     $(".countdown").countdown({
       until: weddingDate,
       format: 'ODHMS'

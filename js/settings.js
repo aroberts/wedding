@@ -43,14 +43,6 @@
       pagination: false
     });
 
-    var $detailsImgs = $('#details .venue-slides')
-    $detailsImgs.superslides({
-      play: 5000,
-      animation_speed: 2000,
-      animation: 'slide',
-      pagination: true,
-    });
-
 
     // ====================================================================
 
@@ -68,6 +60,16 @@
     // ====================================================================
 
     // Owl Carousel
+    $('#details .venue-slides').owlCarousel({
+      navigation: true,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true,
+      autoPlay: 5000,
+      stopOnHover: true,
+    });
+
+
     $("#registry .owl-carousel").owlCarousel({
       items: 6,
       itemsDesktop: [1199,5],

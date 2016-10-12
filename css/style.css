@@ -288,6 +288,13 @@ section.contrast {
   color: #d6516d;
 }
 
+/* DETAILS */
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* PEOPLE & accommodations
 =========================================================================================*/
 

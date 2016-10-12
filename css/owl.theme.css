@@ -11,7 +11,8 @@
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
+  background-color: #ddd;
+  color: #f5f4ec;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
@@ -19,8 +20,13 @@
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
 	position: absolute;
-	top: 90%;
-	margin-top: -53px;
+	top: 100%;
+  padding: .2em;
+  padding-top: 0;
+  line-height: .8em;
+  vertical-align: middle;
+	margin-top: -50px;
+  border-radius: 15px;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

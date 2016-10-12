@@ -62,6 +62,7 @@
     // Owl Carousel
     $('#details .venue-slides').owlCarousel({
       navigation: true,
+      navigationText: ["&laquo;", "&raquo;"],
       slideSpeed: 300,
       paginationSpeed: 400,
       singleItem: true,

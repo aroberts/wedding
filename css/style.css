@@ -33,6 +33,10 @@ h3,h4,h5,h6 {
   text-transform: uppercase;
 }
 
+h3 a,h4 a, h5 a, h6 a {
+  color: #222;
+}
+
 h6 {
   color: #d6516d;
 }
@@ -306,22 +310,39 @@ section {
   color: #d6516d;
 }
 
-/* PEOPLE & ACCOMMODATION
+/* PEOPLE & accommodations
 =========================================================================================*/
 
 #people h5,
-#accommodation h5 {
+#accommodations h5 {
   margin: 0 0 8px;
 }
 
 #people h6,
-#accommodation h6 {
+#accommodations h6 {
   margin: 0 0 15px;
 }
 
 .row-margin {
   margin-bottom: 60px;
 }
+
+#accommodations {
+  background: #f5f4ec;
+}
+
+#accommodations .contact {
+  margin-bottom: 1em;
+}
+
+#accommodations .contact p {
+  margin: 0;
+}
+
+#accommodations .row {
+  margin: 2em 0;
+}
+
 
 /* EVENTS & BLOG
 =========================================================================================*/
@@ -663,7 +684,7 @@ footer {
     padding: 0 0 10px !important;
   }
 
-  #people h5, #accommodation h5 {
+  #people h5, #accommodations h5 {
     margin: 20px 0 8px;
   }
 

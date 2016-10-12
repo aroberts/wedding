@@ -74,8 +74,12 @@ section {
   padding: 80px 0;
 }
 
+section.contrast {
+  background: #f5f4ec;
+}
+
 .btn {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Josefin Slab", sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -241,32 +245,6 @@ section {
   width: 100%;
 }
 
-.justgrimes {
- width: 370px;
- height:370px;
- display:block;
-  display: inline-block;
-  position: relative;
- background:transparent url('../images/justin.jpg') center top no-repeat;
-}
-
-.justgrimes:hover {
-   background-image: url('../images/justin2.jpg');
-}
-
-.amgallow {
- width: 370px;
- height:370px;
- display:block;
-  display: inline-block;
-  position: relative;
- background:transparent url('../images/ann.jpg') center top no-repeat;
-}
-
-.amgallow:hover {
-   background-image: url('../images/ann2.jpg');
-}
-
 .hover-effect i {
   left: 50%;
   margin: -20px 0 0 -20px;
@@ -325,10 +303,6 @@ section {
 
 .row-margin {
   margin-bottom: 60px;
-}
-
-#accommodations {
-  background: #f5f4ec;
 }
 
 #accommodations .contact {

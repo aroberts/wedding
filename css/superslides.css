@@ -1,10 +1,10 @@
-#slides {
+.superslides {
   position: relative;
 }
-#slides .slides-container {
+.superslides .slides-container {
   display: none;
 }
-#slides .scrollable {
+.superslides .scrollable {
   *zoom: 1;
   position: relative;
   top: 0;
@@ -13,7 +13,7 @@
   -webkit-overflow-scrolling: touch;
   height: 100%;
 }
-#slides .scrollable:after {
+.superslides .scrollable:after {
   content: "";
   display: table;
   clear: both;

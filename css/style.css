@@ -78,6 +78,10 @@ section.contrast {
   background: #f5f4ec;
 }
 
+.condensed p {
+  margin: 0;
+}
+
 .btn {
   font-family: "Josefin Slab", sans-serif;
   letter-spacing: 0.3em;
@@ -295,6 +299,13 @@ section.contrast {
     height: auto;
 }
 
+.when, .where {
+  margin: 2em;
+}
+
+.when i, .where i {
+  /* vertical-align: bottom; */
+}
 /* PEOPLE & accommodations
 =========================================================================================*/
 

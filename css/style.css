@@ -212,14 +212,14 @@ section.contrast {
 
 .heading span {
   border: 0;
-  border-top: 1px solid #d6516d;
+  border-top: 1px solid #d80073;
   display: inline-block;
   margin: 5px 10px;
   width: 40px;
 }
 
 .heading i {
-  color: #d6516d;
+  color: #d80073;
 }
 
 /* MAIN BANNER
@@ -235,7 +235,7 @@ section.contrast {
 }
 
 .hover-effect span {
-  background: #d6516d;
+  background: #d80073;
   color: #fff;
   display: block;
   height: 0;
@@ -298,8 +298,8 @@ section.contrast {
 }
 
 .social-icons a:hover {
-  border: 1px solid #d6516d;
-  color: #d6516d;
+  border: 1px solid #d80073;
+  color: #d80073;
 }
 
 /* DETAILS */
@@ -384,7 +384,7 @@ section.contrast {
 }
 
 .post-header span {
-  color: #d6516d;
+  color: #d80073;
 }
 
 .post-meta {
@@ -454,7 +454,7 @@ section.contrast {
 }
 
 #facts .img-circle {
-  background: #d6516d;
+  background: #d80073;
   height: 213px;
   padding-top: 60px;
 }
@@ -488,7 +488,7 @@ section.contrast {
 =========================================================================================*/
 
 #rsvp {
-  background: #d6516d;
+  background: #d80073;
   border-radius: 8px;
   color: #222;
   margin-right: -470px;

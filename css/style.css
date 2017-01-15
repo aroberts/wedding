@@ -194,16 +194,12 @@ section.contrast {
   text-transform: none;
 }
 
+.padded {
+  padding-bottom: 50px;
+}
+
 /* HEADINGS
 =========================================================================================*/
-
-.heading {
-  padding-bottom: 60px;
-}
-
-#activities .heading {
-  padding-bottom: 0;
-}
 
 #activities h4, #activities h5 {
   margin: 8px;
@@ -373,7 +369,6 @@ section.contrast {
 
 .post {
   text-align: left;
-  padding-bottom: 80px;
 }
 
 .post-header {
@@ -648,10 +643,6 @@ footer {
   .welcome {
     top:20%;
     width: 100%;
-  }
-
-  .heading {
-    padding-bottom: 30px;
   }
 
   .post {

@@ -27,7 +27,11 @@ h2 {
   margin: 0;
 }
 
-h3,h4,h5,h6 {
+h3 {
+  /* font-weight: normal; */
+}
+
+h4,h5,h6 {
   margin: 3em 0;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -35,10 +39,6 @@ h3,h4,h5,h6 {
 
 h3 a,h4 a, h5 a, h6 a {
   color: #222;
-}
-
-h6 {
-  color: #d6516d;
 }
 
 .x {
@@ -156,6 +156,7 @@ section.contrast {
   position: absolute;
   width: 450px;
   z-index: 100;
+  font-size: 14px;
 }
 
 /* NAVBAR

@@ -271,10 +271,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-family: "Raleway", Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
   line-height: 1.714;
-  color: #999999;
+  color: #888;
   background-color: #ffffff;
 }
 input,
@@ -360,7 +360,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Josefin Slab", Helvetica, Arial, sans-serif;
+  font-family: "Spinnaker", Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 1.1;
   color: #222222;

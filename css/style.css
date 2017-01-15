@@ -94,6 +94,10 @@ section.contrast {
 }
 
 /* COLORS */
+.bg-white {
+  background-color: #fff;
+}
+
 .bg-red {
   background-color: #e42f0c;
 }

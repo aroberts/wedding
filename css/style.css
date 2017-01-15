@@ -201,6 +201,10 @@ section.contrast {
 /* HEADINGS
 =========================================================================================*/
 
+.heading {
+  padding-bottom: 15px;
+}
+
 #activities h4, #activities h5 {
   margin: 8px;
 }

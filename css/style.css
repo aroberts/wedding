@@ -201,6 +201,15 @@ section.contrast {
   padding-bottom: 60px;
 }
 
+#activities .heading {
+  padding-bottom: 0;
+}
+
+#activities h4, #activities h5 {
+  margin: 8px;
+}
+
+
 .heading span {
   border: 0;
   border-top: 1px solid #d6516d;

@@ -93,6 +93,52 @@ section.contrast {
   padding: 15px 30px;
 }
 
+/* COLORS */
+.bg-red {
+  background-color: #e42f0c;
+}
+
+.bg-red > a:focus,
+.bg-red > a:hover {
+  background-color: #ac1b00 ! important;
+}
+
+.bg-pink {
+  background-color: #d80073;
+}
+
+.bg-pink > a:focus,
+.bg-pink > a:hover {
+  background-color: #a30056 ! important;
+}
+
+.bg-yellow {
+  background-color: #ffd108;
+}
+
+.bg-yellow > a:focus,
+.bg-yellow > a:hover {
+  background-color: #bc9900 ! important;
+}
+
+.bg-blue {
+  background-color: #00e1d5;
+}
+
+.bg-blue > a:focus,
+.bg-blue > a:hover {
+  background-color: #00aaa3 ! important;
+}
+
+.bg-orange {
+  background-color: #ff8405;
+}
+
+.bg-orange > a:focus,
+.bg-orange > a:hover {
+  background-color: #bb5e00 ! important;
+}
+
 /* MAIN BANNER
 =========================================================================================*/
 

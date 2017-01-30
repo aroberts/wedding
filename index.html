@@ -102,7 +102,7 @@
             <li class="bg-orange"><a href="#activities">Activities</a></li>
             <li class="bg-red"><a href="#accommodations">Accommodations</a></li>
             <li class="bg-pink"><a href="#gallery">Gallery</a></li>
-            <li class="bg-yellow disabled"><a href="javascript:;" alt="Coming soon!">RSVP</a></li>
+            <li class="bg-yellow"><a href="#rsvp">RSVP</a></li>
             <li class="bg-blue disabled"><a href="javascript:;" title="Coming soon!">Registry</a></li>
           </ul>
         </div>
@@ -665,125 +665,73 @@
 
     <!-- ========== GALLERY END ========== -->
 
-      <!-- ========== RSVP START ========== -->
-<!--
-      <div id="rsvp" class="text-center" data-scroll-reveal>
-        <div class="heading">
-          <h2>RSVP</h2>
-          <p><span></span><i class="fa fa-heart"></i><span></span></p>
+    <!-- ========== RSVP START ========== -->
+
+    <section id="rsvp">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 heading text-center" data-scroll-reveal>
+            <h2>RSVP</h2>
+            <p><span></span><i class="fa fa-heart"></i><span></span></p>
+          </div>
         </div>
 
-        <form action="https://docs.google.com/forms/d/15rlrGlc1qk10fjpZZqccFvP5hCd0Eg1gzwqRjBcEJEQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+        <form action="https://www.elformo.com/forms/0c18e912-a87e-46f0-8f32-996cd014b8f0" method="post" accept-charset="UTF-8">
+          <input id="elformo_honeypot" name="elformo_honeypot" />
 
-        <div class="row">
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="ltr" class="ss-item ss-item-required ss-text">
-              <div class="ss-form-entry">
-                <div class="form-group col-xs-12">Name
-                  <input type="text" name="entry.1995249611" value="" class="form-control"  id="entry_1995249611" dir="auto" aria-label="Name  " aria-required="true" required="" title="" placeholder="Ron Swanson">
-                </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name1" name="name1" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control guestname" id="name2" name="name2" placeholder="Second guest's name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control guestname" id="name3" name="name3" placeholder="Third guest's name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control guestname" id="name4" name="name4" placeholder="Fourth guest's name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control guestname" id="name5" name="name5" placeholder="Fifth guest's name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control guestname" id="name6" name="name6" placeholder="Sixth guest's name">
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="ltr" class="ss-item ss-item-required ss-text">
-              <div class="ss-form-entry">
-                <div class="form-group col-xs-12">e-mail
-                  <input type="text" name="entry.2045656561" value="" class="form-control" id="entry_2045656561" dir="auto" aria-label="e-mail  " aria-required="true" required="" title="" placeholder="name@domain.com">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group col-xs-12">Number of guests
-            <select name="entry.638643587" id="entry_638643587" aria-label="Number of guests  " aria-required="true" required="">
-              <option value=""></option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-
-
-          <div class="form-group col-xs-12">I&#39;d like to attend...
-            <select name="entry.1693422958" id="entry_1693422958" aria-label="I&#39;d like to attend...  ">
-              <option value=""></option>
-
-              <option value="Wedding (June 7)">Wedding (June 7)</option>
-              <option value="Wedding + Reception (June 7)">Wedding + Reception (June 7)</option>
-              <option value="DC Party (June 14)">DC Party (June 14)</option>
-              <option value="WV Party (June 28)">WV Party (June 28)</option>
-              <option value="Toledo Party (July 4th)">Toledo Party (July 4th)</option>
-
-            </select>
-          </div>
-        </div>
-
-        <input type="hidden" name="draftResponse" value="[,,&quot;4272531519012790176&quot;]">
-        <input type="hidden" name="pageHistory" value="0">
-        <input type="hidden" name="fbzx" value="4272531519012790176">
-
-        <div class="row">
-          <input type="submit" name="submit" value="Submit" id="ss-submit" class="btn btn-lg" >
-        </div>
-      </form>
-    </div>
-
-
-        <form action="https://docs.google.com/forms/d/15rlrGlc1qk10fjpZZqccFvP5hCd0Eg1gzwqRjBcEJEQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" role="form">
-          <div class="row">
-            <div class="form-group col-xs-12">
-              <label for="input-name">Name</label>
-              <input type="text" class="form-control" id="input-name" placeholder="John Doe">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-xs-12">
-              <label for="input-email">Email</label>
-              <input type="email" class="form-control" id="input-email" placeholder="name@domain.com">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-xs-6">
-              <label for="select-guests">Guests</label>
-              <select class="form-control" id="select-guests">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </div>
-            <div class="form-group col-xs-6">
-              <label for="select-attending">I am attending...</label>
-              <select class="form-control" id="select-attending">
-                <option>DC Reception</option>
-                <option>DC Park Wedding</option>
-                <option>DC Wedding Reception</option>
-                <option>DC Party</option>
-                <option>Toledo Party</option>
-                <option>WV Farm Party</option>
-                <option>West Coast Honeymoon</option>
+            <div class="form-group col-sm-2 col-sm-offset-2">
+              <select class="form-control" name="number_of_guests" id="guests">
+                <option disabled selected value>Number of guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
               </select>
             </div>
           </div>
+
           <div class="row">
-            <button type="submit" class="btn btn-lg" onclick="getData();">I'm attending</button>
           </div>
-        </form>
-      </div>
-  </section>
-  -->
+
+          <div class="row">
+            <div class="form-group col-sm-12">
+              <input id="submit" name="submit" type="Submit" />
+            </div>
+          </div>
+
+          </form>
+
+        </div>
+    </section>
+
       <!-- ========== RSVP END ========== -->
 
 
     <!-- ========== REGISTRY START ========== -->
-
     <section id="registry" style="background: #f5f4ec;">
       <div class="container text-center">
         <div class="row">

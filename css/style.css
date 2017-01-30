@@ -471,44 +471,6 @@ section.contrast {
   max-width: 25%;
 }
 
-/* FUN FACTS
-=========================================================================================*/
-
-#facts {
-  overflow: hidden;
-  position: relative;
-}
-
-#facts .parallax {
-  background: url(http://placehold.it/1600x1600.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#facts h3 {
-  color: #fff;
-  font-size: 60px;
-  letter-spacing: normal;
-  margin: 0;
-}
-
-#facts h6 {
-  color: #000;
-  margin: 0;
-}
-
-#facts .img-circle {
-  background: #d80073;
-  height: 213px;
-  padding-top: 60px;
-}
 
 /* GALLERY
 =========================================================================================*/
@@ -539,36 +501,44 @@ section.contrast {
 =========================================================================================*/
 
 #rsvp {
-  background: #d80073;
-  border-radius: 8px;
-  color: #222;
-  margin-right: -470px;
-  padding: 50px;
-  position: absolute;
-  right: 50%;
-  top: 50px;
-  width: 400px;
-  z-index: 100;
+  /* background: #d80073; */
+  /* border-radius: 8px; */
+  /* color: #222; */
+  /* margin-right: -470px; */
+  /* padding: 50px; */
+  /* position: absolute; */
+  /* right: 50%; */
+  /* top: 50px; */
+  /* width: 400px; */
+  /* z-index: 100; */
 }
 
-#rsvp .heading {
-  padding-bottom: 20px;
+#elformo_honeypot {
+  display: none;
 }
 
-#rsvp .heading i {
-  color: #fff;
+#rsvp .guestname {
+  display: none;
 }
 
-#rsvp .heading span {
-  border-color: #fff;
-}
-
-#rsvp .btn {
-  background: #222;
-  color: #fff;
-  margin-top: 20px;
-}
-
+/* #rsvp .heading { */
+/*   padding-bottom: 20px; */
+/* } */
+/*  */
+/* #rsvp .heading i { */
+/*   color: #fff; */
+/* } */
+/*  */
+/* #rsvp .heading span { */
+/*   border-color: #fff; */
+/* } */
+/*  */
+/* #rsvp .btn { */
+/*   background: #222; */
+/*   color: #fff; */
+/*   margin-top: 20px; */
+/* } */
+/*  */
 /* REGISTRY
 =========================================================================================*/
 
@@ -620,38 +590,12 @@ footer {
 ----------------------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
 
-  #facts .img-circle {
-    height: 263px;
-    padding-top: 75px;
-  }
-
-  #facts h3 {
-    font-size: 80px;
-  }
-
-  #rsvp {
-    margin-right: -560px;
-  }
 
 }
 
 /* Medium devices (desktops, 992px and up)
 ----------------------------------------------------------------------------------------*/
 @media (max-width: 991px) {
-
-  #facts .img-circle {
-    height: 158px;
-    padding: 37px 20px 0 20px;
-  }
-
-  #facts h3 {
-    font-size: 50px;
-  }
-
-  #rsvp {
-    margin-right: -360px;
-  }
-
 }
 
 /* Small devices (tablets, 768px and up)
@@ -756,14 +700,8 @@ footer {
     height: 250px;
   }
 
+
   #rsvp {
-    border-radius: 0;
-    margin-right: 0;
-    padding: 60px 15px;
-    position: relative;
-    right: auto;
-    top: auto;
-    width: 100%;
   }
 
 }

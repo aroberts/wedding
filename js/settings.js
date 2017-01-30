@@ -136,6 +136,16 @@
       window.scrollReveal = new scrollReveal({reset: true});
     }
 
+
+    $("#guests").on('change', function() {
+      var num = $("#guests option:selected").val();
+      $("input.guestname").each(function() {
+        var $this = $(this);
+        var idx = $this.attr("name").slice(-1);
+        idx > num ? $this.hide(100) : $this.show(100);
+      });
+    });
+
   })
 
 })(jQuery);

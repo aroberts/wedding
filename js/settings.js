@@ -190,13 +190,13 @@
           method: 'POST',
           url: $form.attr('action'),
           data: $form.serialize(),
-          beforeSend: function (xhr, s) { console.log(xhr); console.log(s); },
-          success: function() {
-            alert('form was submitted');
-          },
-          error: function(xhr, status, e) {
+          complete: function(xhr) {
             $('#rsvp-form').hide(200);
-            $('#rsvp-error').show(100);
+            if ([200, 301, 302].includes(xhr.status)) {
+              $('#rsvp-success').show(100);
+            } else {
+              $('#rsvp-error').show(100);
+            }
           },
         });
       }

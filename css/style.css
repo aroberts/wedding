@@ -82,12 +82,6 @@ section.contrast {
   margin: 0;
 }
 
-.btn {
-  font-family: "Josefin Slab", sans-serif;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-}
-
 .btn-lg {
   font-size: 1em;
   padding: 15px 30px;

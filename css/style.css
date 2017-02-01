@@ -508,6 +508,11 @@ section.contrast {
   display: none;
 }
 
+#rsvp-error, #rsvp-success {
+  display: none;
+}
+
+
 /* #rsvp .heading { */
 /*   padding-bottom: 20px; */
 /* } */

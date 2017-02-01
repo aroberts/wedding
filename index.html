@@ -676,94 +676,110 @@
           </div>
         </div>
 
-        <form action="https://www.elformo.com/forms/0c18e912-a87e-46f0-8f32-996cd014b8f0" method="post" accept-charset="UTF-8">
-          <input id="elformo_honeypot" name="elformo_honeypot" />
+        <div id="rsvp-form">
+          <form action="https://www.elformo.com/forms/0c18e912-a87e-46f0-8f32-996cd014b8f0" method="post" accept-charset="UTF-8">
+            <input id="elformo_honeypot" name="elformo_honeypot" />
 
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-2">
-              <div class="form-group">
-                <input type="text" class="form-control" id="name1" name="name1" placeholder="Your name">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name1" name="name1" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control guestname" id="name2" name="name2" placeholder="Second guest's name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control guestname" id="name3" name="name3" placeholder="Third guest's name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control guestname" id="name4" name="name4" placeholder="Fourth guest's name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control guestname" id="name5" name="name5" placeholder="Fifth guest's name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control guestname" id="name6" name="name6" placeholder="Sixth guest's name">
+                </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control guestname" id="name2" name="name2" placeholder="Second guest's name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control guestname" id="name3" name="name3" placeholder="Third guest's name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control guestname" id="name4" name="name4" placeholder="Fourth guest's name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control guestname" id="name5" name="name5" placeholder="Fifth guest's name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control guestname" id="name6" name="name6" placeholder="Sixth guest's name">
+
+              <div class="form-group col-sm-2 col-sm-offset-1">
+                <select class="form-control" name="number_of_guests" id="guests">
+                  <option disabled selected value>Number of guests</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="5">5 guests</option>
+                  <option value="6">6 guests</option>
+                </select>
               </div>
             </div>
 
-            <div class="form-group col-sm-2 col-sm-offset-1">
-              <select class="form-control" name="number_of_guests" id="guests">
-                <option disabled selected value>Number of guests</option>
-                <option value="1">1 guest</option>
-                <option value="2">2 guests</option>
-                <option value="3">3 guests</option>
-                <option value="4">4 guests</option>
-                <option value="5">5 guests</option>
-                <option value="6">6 guests</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-2">
-              Will you attend?
-              <div class="pull-right">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="attending" value="yes">
-                    Will attend
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="attending" value="no">
-                    Will not attend
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-2">
-              Friday dinner?
-              <div class="pull-right">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="friday_dinner" value="yes">
-                    Will attend
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="friday_dinner" value="no">
-                    Will not attend
-                  </label>
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2">
+                Will you attend?
+                <div class="pull-right">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="attending" value="yes">
+                      Will attend
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="attending" value="no">
+                      Will not attend
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="form-group col-sm-9">
-
-              <input class="pull-right" id="submit" name="submit" type="Submit" />
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2">
+                Friday dinner?
+                <div class="pull-right">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="friday_dinner" value="yes">
+                      Will attend
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="friday_dinner" value="no">
+                      Will not attend
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+
+            <div class="row">
+              <div class="form-group col-sm-9">
+                <input class="pull-right" id="submit" name="submit" type="Submit" />
+              </div>
+            </div>
 
           </form>
-
         </div>
+
+        <div id="rsvp-success" class="row">
+          <div class="col-sm-12 heading text-center">
+            <h3>Thank you!</h3>
+          </div>
+        </div>
+
+        <div id="rsvp-error">
+          <div class="col-sm-12 heading text-center">
+            <h3>Oh no!</h3>
+            <p>Something went wrong with our magic form. Either
+              <a href="javascript:window.location.reload(true)">try again</a>
+              or reach out to
+              <a href="mailto:adroberts@gmail.com">Andrew!</a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
       <!-- ========== RSVP END ========== -->

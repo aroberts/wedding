@@ -158,11 +158,13 @@
         data: $form.serialize(),
         success: function() {
           alert('form was submitted');
-        }
+        },
+        error: function(xhr, status, e) {
+          $('#rsvp-form').hide(200);
+          $('#rsvp-error').show(100);
+        },
       });
-
     });
-
   })
 
 })(jQuery);

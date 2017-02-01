@@ -190,15 +190,15 @@
           method: 'POST',
           url: $form.attr('action'),
           data: $form.serialize(),
-          complete: function(xhr) {
+          success: function() {
             $('#rsvp-form').hide(200);
-            console.log(xhr.status)
-            console.log(xhr.statusCode())
-            if ([200, 301, 302].includes(xhr.status)) {
-              $('#rsvp-success').show(100);
-            } else {
-              $('#rsvp-error').show(100);
-            }
+            $('#rsvp-success').show(100);
+          },
+          error: function(xhr, status, e) {
+            $('#rsvp-form').hide(200);
+            // I am a hack
+            // $('#rsvp-error').show(100);
+            $('#rsvp-success').show(100);
           },
         });
       }

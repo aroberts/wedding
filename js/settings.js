@@ -116,24 +116,50 @@
     });
 
 
+    function validateName(id) {
+      var $elem = $(id);
+      var $err = $(id).parent().find('.error');
+      if ($elem.is(":visible") && !$elem.val()) {
+        $err.text('Please enter a name');
+        return false
+      } else {
+        $err.text("");
+        return true;
+      }
+    };
+
+
     $('form').on('submit', function (e) {
 
       e.preventDefault();
       var $form = $(e.target)
 
-      $.ajax({
-        method: 'post',
-        url: $form.attr('action'),
-        data: $form.serialize(),
-        success: function() {
-          alert('form was submitted');
-        },
-        error: function(xhr, status, e) {
-          $('#rsvp-form').hide(200);
-          $('#rsvp-error').show(100);
-        },
-      });
+      // validate
+      var valid = ! [
+        validateName('#name1'),
+        validateName('#name2'),
+        validateName('#name3'),
+        validateName('#name4'),
+        validateName('#name5'),
+        validateName('#name6'),
+      ].includes(false);
+
+      if (valid) {
+        $.ajax({
+          method: 'post',
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          success: function() {
+            alert('form was submitted');
+          },
+          error: function(xhr, status, e) {
+            $('#rsvp-form').hide(200);
+            $('#rsvp-error').show(100);
+          },
+        });
+      }
     });
+
   })
 
 })(jQuery);

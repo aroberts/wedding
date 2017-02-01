@@ -107,6 +107,7 @@
 
 
     $("#guests").on('change', function() {
+      validateGuests('#guests');
       var num = $("#guests option:selected").val();
       $("input.guestname").each(function() {
         var $this = $(this);
@@ -115,15 +116,25 @@
       });
     });
 
+    $('input').on('change', function(e) {
+      var $elem = $(e.target);
+      var type = $elem.attr('type');
+      if (type === 'text') {
+        validateName($elem);
+      } else if (type === 'radio') {
+        validateRadio($elem.attr('name'));
+      }
+    });
 
-    function validateName(id) {
-      var $elem = $(id);
-      var $err = $(id).parent().find('.error');
+    function validateName($elem) {
+      var $err = $elem.parent().find('.error');
       if ($elem.is(":visible") && !$elem.val()) {
         $err.text('Please enter a name');
+        $err.addClass('invalid');
         return false;
       } else {
         $err.text("");
+        $err.removeClass('invalid');
         return true;
       }
     };
@@ -133,9 +144,11 @@
       var $err = $(id).parent().find('.error');
       if (!$elem.val()) {
         $err.text('How many guests?');
+        $err.addClass('invalid');
         return false;
       } else {
         $err.text('');
+        $err.removeClass('invalid');
         return true;
       }
     }
@@ -145,9 +158,11 @@
       var $err = $elems.parents('.form-group').find('.error');
       if (!$elems.filter(':checked').length) {
         $err.text('Please select one:');
+        $err.addClass('invalid');
         return false;
       } else {
         $err.text('');
+        $err.removeClass('invalid');
         return true;
       }
     }
@@ -160,12 +175,12 @@
 
       // validate
       var valid = ! [
-        validateName('#name1'),
-        validateName('#name2'),
-        validateName('#name3'),
-        validateName('#name4'),
-        validateName('#name5'),
-        validateName('#name6'),
+        validateName($('#name1')),
+        validateName($('#name2')),
+        validateName($('#name3')),
+        validateName($('#name4')),
+        validateName($('#name5')),
+        validateName($('#name6')),
         validateGuests('#guests'),
         validateRadio('attending'),
         validateRadio('friday_dinner'),

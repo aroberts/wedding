@@ -192,6 +192,8 @@
           data: $form.serialize(),
           complete: function(xhr) {
             $('#rsvp-form').hide(200);
+            console.log(xhr.status)
+            console.log(xhr.statusCode())
             if ([200, 301, 302].includes(xhr.status)) {
               $('#rsvp-success').show(100);
             } else {

@@ -681,7 +681,22 @@
             <input id="elformo_honeypot" name="elformo_honeypot" />
 
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-2">
+              <div class="form-group col-sm-2 col-sm-offset-4">
+                <span class="error"></span>
+                <select class="form-control" name="number_of_guests" id="guests">
+                  <option disabled selected value>Number of guests</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="5">5 guests</option>
+                  <option value="6">6 guests</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-4">
                 <div class="form-group">
                   <span class="error"></span>
                   <input type="text" class="form-control" id="name1" name="name1" placeholder="Your name">
@@ -707,23 +722,10 @@
                   <input type="text" class="form-control guestname" id="name6" name="name6" placeholder="Sixth guest's name">
                 </div>
               </div>
-
-              <div class="form-group col-sm-2 col-sm-offset-1">
-                <span class="error"></span>
-                <select class="form-control" name="number_of_guests" id="guests">
-                  <option disabled selected value>Number of guests</option>
-                  <option value="1">1 guest</option>
-                  <option value="2">2 guests</option>
-                  <option value="3">3 guests</option>
-                  <option value="4">4 guests</option>
-                  <option value="5">5 guests</option>
-                  <option value="6">6 guests</option>
-                </select>
-              </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-2">
+              <div class="col-sm-4 col-sm-offset-4">
                 Will you attend?
                 <div class="form-group pull-right">
                   <span class="error"></span>
@@ -744,7 +746,7 @@
             </div>
 
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-2">
+              <div class="col-sm-4 col-sm-offset-4">
                 Friday dinner?
                 <div class="form-group pull-right">
                   <span class="error"></span>
@@ -765,8 +767,8 @@
             </div>
 
             <div class="row">
-              <div class="form-group col-sm-9">
-                <input class="pull-right" id="submit" name="submit" type="Submit" />
+              <div class="form-group col-sm-4 col-sm-offset-4 text-center">
+                <input id="submit" name="submit" type="Submit" />
               </div>
             </div>
 

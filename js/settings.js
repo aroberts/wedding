@@ -146,6 +146,23 @@
       });
     });
 
+
+    $('form').on('submit', function (e) {
+
+      e.preventDefault();
+      var $form = $(e.target)
+
+      $.ajax({
+        method: 'post',
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        success: function() {
+          alert('form was submitted');
+        }
+      });
+
+    });
+
   })
 
 })(jQuery);

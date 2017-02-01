@@ -78,37 +78,6 @@
 
     // ====================================================================
 
-    // Parallax
-
-    $('.parallax').scrolly({bgParallax: true});
-
-    // ====================================================================
-
-    // Fun Facts Counter
-
-    var flag = 0;
-
-      $(window).scroll(function() {
-          if (flag == 1){
-             return false;
-          }
-          else{
-             var bh = $(window).height();
-             var st = $(window).scrollTop();
-             var el = $('.timer');
-             var eh = el.height();
-             if ( st >= (100 + eh) - bh ) {
-                 el.countTo({
-                     speed: 2000,
-                     refreshInterval: 20
-                 });
-             }
-             flag = 1;
-          }
-      });
-
-    // ====================================================================
-
     // Fancybox
 
     $('.fancybox').fancybox({

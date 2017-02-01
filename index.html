@@ -709,6 +709,7 @@
               </div>
 
               <div class="form-group col-sm-2 col-sm-offset-1">
+                <span class="error"></span>
                 <select class="form-control" name="number_of_guests" id="guests">
                   <option disabled selected value>Number of guests</option>
                   <option value="1">1 guest</option>
@@ -724,7 +725,8 @@
             <div class="row">
               <div class="col-sm-4 col-sm-offset-2">
                 Will you attend?
-                <div class="pull-right">
+                <div class="form-group pull-right">
+                  <span class="error"></span>
                   <div class="radio">
                     <label>
                       <input type="radio" name="attending" value="yes">
@@ -744,7 +746,8 @@
             <div class="row">
               <div class="col-sm-4 col-sm-offset-2">
                 Friday dinner?
-                <div class="pull-right">
+                <div class="form-group pull-right">
+                  <span class="error"></span>
                   <div class="radio">
                     <label>
                       <input type="radio" name="friday_dinner" value="yes">

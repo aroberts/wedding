@@ -105,7 +105,6 @@
       window.scrollReveal = new scrollReveal({reset: true});
     }
 
-
     $("#guests").on('change', function() {
       validateGuests('#guests');
       var num = $("#guests option:selected").val();
@@ -188,9 +187,10 @@
 
       if (valid) {
         $.ajax({
-          method: 'post',
+          method: 'POST',
           url: $form.attr('action'),
           data: $form.serialize(),
+          beforeSend: function (xhr, s) { console.log(xhr); console.log(s); },
           success: function() {
             alert('form was submitted');
           },

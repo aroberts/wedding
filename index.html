@@ -680,7 +680,7 @@
           <input id="elformo_honeypot" name="elformo_honeypot" />
 
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-sm-offset-2">
               <div class="form-group">
                 <input type="text" class="form-control" id="name1" name="name1" placeholder="Your name">
               </div>
@@ -701,7 +701,7 @@
               </div>
             </div>
 
-            <div class="form-group col-sm-2 col-sm-offset-2">
+            <div class="form-group col-sm-2 col-sm-offset-1">
               <select class="form-control" name="number_of_guests" id="guests">
                 <option disabled selected value>Number of guests</option>
                 <option value="1">1 guest</option>
@@ -715,11 +715,49 @@
           </div>
 
           <div class="row">
+            <div class="col-sm-4 col-sm-offset-2">
+              Will you attend?
+              <div class="pull-right">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="attending" value="yes">
+                    Will attend
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="attending" value="no">
+                    Will not attend
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="row">
-            <div class="form-group col-sm-12">
-              <input id="submit" name="submit" type="Submit" />
+            <div class="col-sm-4 col-sm-offset-2">
+              Friday dinner?
+              <div class="pull-right">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="friday_dinner" value="yes">
+                    Will attend
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="friday_dinner" value="no">
+                    Will not attend
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-9">
+
+              <input class="pull-right" id="submit" name="submit" type="Submit" />
             </div>
           </div>
 

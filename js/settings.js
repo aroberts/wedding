@@ -121,12 +121,36 @@
       var $err = $(id).parent().find('.error');
       if ($elem.is(":visible") && !$elem.val()) {
         $err.text('Please enter a name');
-        return false
+        return false;
       } else {
         $err.text("");
         return true;
       }
     };
+
+    function validateGuests(id) {
+      var $elem = $(id);
+      var $err = $(id).parent().find('.error');
+      if (!$elem.val()) {
+        $err.text('How many guests?');
+        return false;
+      } else {
+        $err.text('');
+        return true;
+      }
+    }
+
+    function validateRadio(name) {
+      var $elems = $('input:radio[name=' + name + ']');
+      var $err = $elems.parents('.form-group').find('.error');
+      if (!$elems.filter(':checked').length) {
+        $err.text('Please select one:');
+        return false;
+      } else {
+        $err.text('');
+        return true;
+      }
+    }
 
 
     $('form').on('submit', function (e) {
@@ -142,6 +166,9 @@
         validateName('#name4'),
         validateName('#name5'),
         validateName('#name6'),
+        validateGuests('#guests'),
+        validateRadio('attending'),
+        validateRadio('friday_dinner'),
       ].includes(false);
 
       if (valid) {

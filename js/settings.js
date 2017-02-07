@@ -166,10 +166,13 @@
       }
     }
 
+    $("#rsvp_target").on("load", function(e) {
+      $('#rsvp-form').hide(200);
+      $('#rsvp-success').show(100);
+    });
 
     $('form').on('submit', function (e) {
 
-      e.preventDefault();
       var $form = $(e.target)
 
       // validate
@@ -185,22 +188,8 @@
         validateRadio('friday_dinner'),
       ].includes(false);
 
-      if (valid) {
-        $.ajax({
-          method: 'POST',
-          url: $form.attr('action'),
-          data: $form.serialize(),
-          success: function() {
-            $('#rsvp-form').hide(200);
-            $('#rsvp-success').show(100);
-          },
-          error: function(xhr, status, e) {
-            $('#rsvp-form').hide(200);
-            // I am a hack
-            // $('#rsvp-error').show(100);
-            $('#rsvp-success').show(100);
-          },
-        });
+      if (!valid) {
+        return false;
       }
     });
 

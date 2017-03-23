@@ -536,33 +536,12 @@ section.contrast {
 /* REGISTRY
 =========================================================================================*/
 
-#registry {
-  letter-spacing: 0.2em;
-  padding: 30px 0;
-  text-transform: uppercase;
-}
-
-#registry .item {
-  padding: 15px;
-  text-align: center;
-}
-
 #registry .item a {
-  border: 1px solid #ddd;
-  display: block;
-  height: 80px;
-  padding: 15px;
-  position: relative;
-}
-
-#registry .item span {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
 }
 
 #registry .item img {
-  max-height: 50px;
+  border: 1px solid #ddd;
+  max-height: 150px;
   vertical-align: middle;
 }
 
